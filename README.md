@@ -2,14 +2,16 @@
 Simple object detection app with streamlit. Upload an image and perform object detection. Adjust the confidence threshold to see how this affects predictions.
 
 <p align="center">
-<img src="https://github.com/robmarkcole/object-detection-app/blob/master/images/usage.jpg" width="700">
+<img src="https://github.com/cliffweng/object-detection-app/blob/master/images/usage.jpg" width="700">
 </p>
 
+## Clone this repo
+Clone this repo to your local machine, and rename all the cliffweng with your name
 ## Run with Docker
 From the root dir:
 ```
-    docker build -t robmarkcole/object-detection-app .
-    docker run -p 8501:8501 robmarkcole/object-detection-app:latest
+docker build -t cliffweng/object-detection-app .
+docker run -p 8501:8501 cliffweng/object-detection-app:latest
 ```
 Then visit [localhost:8501](http://localhost:8501/)
 
