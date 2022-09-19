@@ -50,6 +50,9 @@ def annotate_image(
 
 st.title("Object detection with MobileNet SSD")
 img_file_buffer = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
+if img_file_buffer is None:
+    img_file_buffer = st.camera_input("Or, take a picture")
+
 confidence_threshold = st.slider(
     "Confidence threshold", 0.0, 1.0, DEFAULT_CONFIDENCE_THRESHOLD, 0.05
 )

@@ -10,8 +10,9 @@ Clone this repo to your local machine, and rename all the cliffweng with your na
 ## Run with Docker
 From the root dir:
 ```
-docker build -t cliffweng/object-detection-app .
-docker run -p 8501:8501 cliffweng/object-detection-app:latest
+docker build -t cliffweng/streamlit_camera .
+docker run -p 8501:8501 -v %cd%:/home/streamlit cliffweng/streamlit_camera
+docker run -p 8501:8501 cliffweng/streamlit_camera
 ```
 Then visit [localhost:8501](http://localhost:8501/)
 
